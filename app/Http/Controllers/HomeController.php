@@ -27,6 +27,6 @@ class HomeController extends Controller
     }
 
     public function forms(){
-        return view('forms/form1')
+        return view('forms.form1');
     }
 }
