@@ -1,13 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Clients\' Money in Bank') }}</div>
-
+                <!-- <div class="card-header">{{ __('Clients\' Money in Bank - Premiums') }}</div> -->
+                <div class="card-header"></div>
                 <div class="card-body">
+                    <div class="text-center">
+                        <h2><strong>Clients' Money in Bank-Premiums</strong></h2>                
+                    </div>
+                    <br>
                     <form method="" action="" aria-label="#" return false>
                         @csrf
 
@@ -40,7 +45,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="account_number" class="col-md-4 col-form-label text-md-right">{{ __('Account Balance') }}</label>
+                            <label for="account_balance" class="col-md-4 col-form-label text-md-right">{{ __('Account Balance') }}</label>
 
                             <div class="col-md-6">
                                 <input id="account_balance" type="text" class="form-control{{ $errors->has('account_balance') ? ' is-invalid' : '' }}" name="account_balance" required>
@@ -53,28 +58,53 @@
                             </div>
                         </div>
 
-
-                        <!-- <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Submit') }}
+                                </button>
                             </div>
-                        </div> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <!-- <div class="card-header">{{ __('Clients\' Money in Bank - Claims') }}</div> -->
+                <div class="card-header"></div>
+
+                <div class="card-body">
+                    <div class="text-center">
+                        <h2><strong>Clients' Money in Bank - Claims</strong></h2>                
+                    </div>
+                    <br>
+                    <form method="" action="" aria-label="#" return false>
+                        @csrf
+                        <div class="form-group row">
+                            <label for="account_balance" class="col-md-4 col-form-label text-md-right">{{ __(' Balance') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="account_balance" type="text" class="form-control{{ $errors->has('account_balance') ? ' is-invalid' : '' }}" name="account_balance" required>
+
+                                @if ($errors->has('account_balance'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('account_balance') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Submit') }}
                                 </button>
-
-                                <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a> -->
                             </div>
                         </div>
                     </form>

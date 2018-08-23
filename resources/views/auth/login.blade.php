@@ -5,9 +5,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <!-- <div class="card-header">{{ __('Login') }}</div> -->
+                <div class="card-header"></div>
 
                 <div class="card-body">
+                    <div class="text-center">
+                        <!-- <img src="/images/insurance_commission_logo.png"> -->
+                        <h2><strong>Login</strong></h2>                
+                    </div>
+                    <br>
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                         @csrf
 

@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700');
 
 // Variables
 @import 'variables';
@@ -9,6 +9,22 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
-  background-color: #fff;
+  background-color: #234a95 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.blue-nav-item{
+	color: #fff;
+}
+
+.blue-nav-item:hover{
+	color: #000;
+	//background-color: #ffa400 !important;
+	//009ffd LIGHTER BLUE
+	//001242 blue
+	//2f4858 gray
+}
+
+body{
+	padding-top: 65px;
 }
