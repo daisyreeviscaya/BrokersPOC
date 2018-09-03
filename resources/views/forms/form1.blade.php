@@ -38,7 +38,7 @@
                 <label for="account_number" class="col-md-4 col-form-label text-md-right">{{ __('Account Number') }}</label>
 
                 <div class="col-md-6">
-                    <input id="account_number" type="text" class="form-control{{ $errors->has('account_number') ? ' is-invalid' : '' }}" name="account_number" required>
+                    <input id="account_number" type="number" class="form-control{{ $errors->has('account_number') ? ' is-invalid' : '' }}" name="account_number" required>
 
                     @if ($errors->has('account_number'))
                         <span class="invalid-feedback" role="alert">
@@ -255,6 +255,45 @@
       <div class="card-body">
         <div class="text-center">
             <h2><strong>Clients' Money on Hand - Claims</strong></h2>                
+        </div>
+        <br>
+        <form method="" action="" aria-label="#" return false>
+            @csrf
+
+            <div class="form-group row">
+                <label for="balance" class="col-md-4 col-form-label text-md-right">{{ __('Balance') }}</label>
+
+                <div class="col-md-6">
+                    <input id="balance" type="text" class="form-control{{ $errors->has('balance') ? ' is-invalid' : '' }}" name="balance" required>
+
+                    @if ($errors->has('balance'))
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $errors->first('balance') }}</strong>
+                        </span>
+                    @endif
+                </div>
+            </div>
+
+            <div class="form-group row mb-0">
+                <div class="col-md-8 offset-md-4">
+                    <button type="submit" class="btn btn-primary">{{ __('Submit') }}</button>
+                </div>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+   <br>
+  <div class="card">
+    <div class="card-header" id="headingSix">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Client's Money on Hand - HMO Fees
+        </button>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="text-center">
+            <h2><strong>Client's Money on Hand - HMO Fees</strong></h2>                
         </div>
         <br>
         <form method="" action="" aria-label="#" return false>

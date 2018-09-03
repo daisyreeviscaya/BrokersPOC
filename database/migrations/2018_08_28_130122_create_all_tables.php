@@ -14,31 +14,28 @@ class CreateAllTables extends Migration
     public function up()
     {
         
-        Schema::dropIfExists('subsection_titles');
-        Schema::dropIfExists('forms_attributes');
-        Schema::dropIfExists('account_titles');
-        Schema::create('account', function (Blueprint $table) {
+        Schema::create('accounts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
         });
-        Schema::create('subsection', function (Blueprint $table) {
+        Schema::create('subsections', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
         });
-        Schema::create('account_subsection', function (Blueprint $table) {
+        Schema::create('accounts_subsections', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('account_id');
             $table->integer('subsection_id');            
             $table->timestamps();
         });
-        Schema::create('form', function (Blueprint $table) {
+        Schema::create('forms', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');          
             $table->timestamps();
         });
-        Schema::create('subsection_form', function (Blueprint $table) {
+        Schema::create('subsections_forms', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('subsection_id');    
             $table->integer('form_id');        

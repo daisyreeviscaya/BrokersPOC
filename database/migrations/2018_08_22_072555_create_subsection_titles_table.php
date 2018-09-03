@@ -13,17 +13,17 @@ class CreateSubsectionTitlesTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('subsection_titles');
-        Schema::create('subsection_titles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('account_title_id')->unsigned();
-            $table->string('name');
-            $table->timestamps();
-        });
+        // Schema::dropIfExists('subsection_titles');
+        // Schema::create('subsection_titles', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->integer('account_title_id')->unsigned();
+        //     $table->string('name');
+        //     $table->timestamps();
+        // });
 
-        Schema::table('subsection_titles', function($table) {
-            $table->foreign('account_title_id')->references('id')->on('account_titles');
-        });
+        // Schema::table('subsection_titles', function($table) {
+        //     $table->foreign('account_title_id')->references('id')->on('account_titles');
+        // });
     }
 
     /**

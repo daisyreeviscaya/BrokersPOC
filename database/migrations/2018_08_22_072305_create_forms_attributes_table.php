@@ -13,11 +13,11 @@ class CreateFormsAttributesTable extends Migration
      */
     public function up()
     {
-        Schema::create('forms_attributes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->timestamps();
-        });
+        // Schema::create('forms_attributes', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->string('name');
+        //     $table->timestamps();
+        // });
     }
 
     /**
