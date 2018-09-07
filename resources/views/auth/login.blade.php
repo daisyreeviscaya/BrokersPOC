@@ -6,11 +6,12 @@
         <div class="col-md-8">
             <div class="card">
                 <!-- <div class="card-header">{{ __('Login') }}</div> -->
-                <div class="card-header"></div>
+                <!-- <div class="card-header"></div> -->
 
                 <div class="card-body">
                     <div class="text-center">
                         <!-- <img src="/images/insurance_commission_logo.png"> -->
+                        <h3><strong>insert logo here<strong></h3>
                         <h2><strong>Login</strong></h2>                
                     </div>
                     <br>

@@ -20,6 +20,19 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/ip2_1', 'HomeController@ip2_1');
+Route::get('/ip2_2', 'HomeController@ip2_2');
+Route::get('/ip2_3', 'HomeController@ip2_3');
+Route::get('/ip2_4', 'HomeController@ip2_4');
+Route::get('/op2_rb', 'HomeController@op2_rb');
+Route::get('/op2_ib', 'HomeController@op2_ib');
+Route::get('/op1_sched', 'HomeController@op1_sched');
+Route::get('/op1_summ', 'HomeController@op1_summ');
+Route::get('/company_profile', 'HomeController@profile')->name('profile_url');
+Route::get('/admin', 'HomeController@admin')->name('admin');
+Route::get('/examiner', 'HomeController@examiner')->name('examiner');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/form', 'HomeController@forms');
+
+//wala pang laman
+Route::get('/user_dashboard', 'HomeController@user_d')->name('user_dashboard');

@@ -27,7 +27,7 @@
             <!-- <div class="container-fluid"> -->
                 @guest
                 @else
-                    <a class="navbar-brand blue-nav-item" href="{{ url('/home') }}">
+                    <a class="navbar-brand blue-nav-item" href="{{ url('/examiner') }}">
                     <!-- {{ config('app.name', 'Laravel') }} -->
                     <img src="/images/logo_nav.png">
                     HOME
@@ -45,7 +45,24 @@
                     <ul class="navbar-nav mr-auto">
                         @guest
                         @else
-                        @endguest
+                        <!-- <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle blue-nav-item" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    Processes <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href=""> Annual Statement of Financial Status</a>
+                                    <hr>
+                                    <a class="dropdown-item" href="">
+                                        Quarterly Monitoring of Clients' Money
+                                    </a>
+                                    <hr>
+                                    <a class="dropdown-item" href="">
+                                        Issuance of Certification
+                                    </a>
+                                </div>
+                            </li> -->
+                            @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -65,7 +82,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('profile_url') }}">Company Profile</a>
+                                    <a class="dropdown-item" href="">User Profile</a>
                                     <hr>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

@@ -6,10 +6,11 @@
         <div class="col-md-8">
             <div class="card">
                 <!-- <div class="card-header">{{ __('Register') }}</div> -->
-                <div class="card-header"></div>
+                <!-- <div class="card-header"></div> -->
 
                 <div class="card-body">
                     <div class="text-center">
+                        <h3><strong>insert logo here</strong></h3>
                         <h2><strong>Sign Up</strong></h2>                
                     </div>
                     <br>
