@@ -45,6 +45,17 @@
                     <ul class="navbar-nav mr-auto">
                         @guest
                         @else
+                        <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/op1_sched') }}">Annual Statement</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/op2_ib') }}">Quarterly Monitoring</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Certificate Issuance</a>
+    </li>
+  </ul>
                         <!-- <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle blue-nav-item" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     Processes <span class="caret"></span>

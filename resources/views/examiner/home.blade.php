@@ -1,5 +1,4 @@
 @extends('examiner.dashboard')
-@extends('examiner.home_gen')
 @section('content')
 <div class="container">
         <div class="row justify-content-center">

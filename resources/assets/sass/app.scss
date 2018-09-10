@@ -12,19 +12,30 @@
   background-color: #234a95 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
-
+.navbar-dark{
+	margin-top: 75px;
+}
 .blue-nav-item{
 	color: #fff;
 }
-
+.progress-bar1{
+	width:25%;
+}
+.progress-bar2{
+	width:50%;
+}
+.progress-bar3{
+	width:75%;
+}
+.progress-bar4{
+	width:100%;
+}
+.table{
+	text-align: center;
+}
 .blue-nav-item:hover{
 	color: #fff;
 	background-color: rgba(125,136,145,0.5);
-	//#7d8891;
-	//background-color: #ffa400 !important;
-	//009ffd LIGHTER BLUE
-	//001242 blue
-	//2f4858 gray
 }
 
 body{

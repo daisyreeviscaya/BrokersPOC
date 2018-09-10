@@ -1,5 +1,5 @@
 @extends('examiner.dashboard')
-@extends('examiner.annualnav')
+
 @section('content')
 <h1>ABC Company</h1>
 <h3>Schedule of Cash and Cash Equivalents</h3>

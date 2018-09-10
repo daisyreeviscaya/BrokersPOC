@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@extends('users.dashboard')
 @section('content')
 <div class="row justify-content-center">
 	<div class="col-md-8">
@@ -13,7 +12,7 @@
 	        <form method="" action="" aria-label="#" return false>
             @csrf
 				<table class="table">
-				    <thead style="text-align: center">
+				    <thead><!-- style="text-align: center"> -->
 				      <tr>
 				        <th>Line of Business</th>
 				        <th>Balance at the Beginning of the Year</th>
@@ -115,7 +114,7 @@
 	    </div>
 	    <br>
 		  <div class="progress">
-		    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%">2 out of 4</div>
+		    <div class="progress-bar progress-bar-striped progress-bar-animate2 progress-bar2">2 out of 4</div>
 		  </div>
 		  <br>
 		  <a href="{{ url('/ip2_1') }}" class="btn btn-danger">Previous</a>

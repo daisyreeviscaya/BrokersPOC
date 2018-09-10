@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@extends('users.dashboard')
+
 @section('content')
 <div class="row justify-content-center">
 <div class="col-md-8">
@@ -117,7 +117,7 @@
   </div>
   <br>
   <div class="progress">
-    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%">1 out of 4</div>
+    <div class="progress-bar progress-bar-striped progress-bar-animated progress-bar1">1 out of 4</div>
   </div>
   <br>
   <a href="" class="btn btn-danger disabled">Previous</a>

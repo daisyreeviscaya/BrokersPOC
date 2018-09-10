@@ -32,6 +32,17 @@
                     <img src="/images/logo_nav.png">
                     HOME
                     </a>
+                    <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/form') }}">Annual Statement</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/ip2_1') }}">Quarterly Monitoring</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="">Certificate Issuance</a>
+    </li>
+  </ul>
                     
                 @endguest
 
