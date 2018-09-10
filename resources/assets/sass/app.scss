@@ -11,9 +11,22 @@
 .navbar-laravel {
   background-color: #234a95 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  z-index: 2;	
 }
+
 .navbar-dark{
 	margin-top: 75px;
+	//background-color: #122C34;
+	z-index: 1;
+}
+
+.subnavbar{
+	margin-top: 75px;
+	background-color: #122C34;
+	z-index: 1;
+	.nav-link{
+		color: white;
+	}
 }
 .blue-nav-item{
 	color: #fff;
@@ -40,4 +53,5 @@
 
 body{
 	padding-top: 150px;
+	
 }

@@ -3,7 +3,7 @@
 @section('content')
 <h1>ABC Company</h1>
 <h3>Schedule of Cash and Cash Equivalents</h3>
-  <table class="table table-hover" style="margin-left: 25px; margin-right: 25px">
+  <table class="table table-hover">
     <thead>
     	<tr>
     		<th>Account Name</th>
@@ -30,7 +30,7 @@
     </tbody>
   </table>
 <h3>Schedule of Premiums Receivable</h3>
-  <table class="table table-hover" style="margin-left: 25px; margin-right: 25px">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th>Account Name</th>
@@ -49,7 +49,7 @@
     </tbody>
   </table>
 <h3>Schedule of Prepayments</h3>
-  <table class="table table-hover" style="margin-left: 25px; margin-right: 25px">
+  <table class="table table-hover">
     <thead>
       <tr>
         <th>Account Name</th>

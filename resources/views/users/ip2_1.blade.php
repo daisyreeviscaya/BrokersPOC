@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+@include('users.dashboard')
 <div class="row justify-content-center">
 <div class="col-md-8">
   <div class="card">
@@ -100,13 +100,6 @@
                     @endif
                 </div>
             </div>
-            <!-- <div class="form-group">
-                <div class="col-md-8 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        {{ __('Update Profile') }}
-                    </button>
-                </div>
-            </div> -->
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">
                     {{ __('Update Profile') }}

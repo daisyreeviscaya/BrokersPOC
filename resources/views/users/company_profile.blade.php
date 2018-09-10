@@ -3,8 +3,6 @@
 <div class="row justify-content-center">
 <div class="col-md-8">
   <div class="card">
-    
-    
       <div class="card-body">
         <div class="text-center">
             <h2><strong>Company Profile</strong></h2>                
@@ -76,14 +74,6 @@
                     </span>
                 @endif
             </div>
-
-            <!-- <div class="form-group">
-                <div class="col-md-8 offset-md-4">
-                    <button type="submit" class="btn btn-primary">
-                        {{ __('Update Profile') }}
-                    </button>
-                </div>
-            </div> -->
             <div class="form-group">
 	            <button type="submit" class="btn btn-primary">
 	                {{ __('Update Profile') }}

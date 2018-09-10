@@ -1,7 +1,5 @@
 @extends('examiner.dashboard')
 @section('content')
-
-
 <div id="section1" class="container-fluid">
   <h1>Statement of Business Operation - Insurance Broker</h1>
   <table class="table table-hover">
