@@ -10522,6 +10522,37 @@ a.text-dark:focus {
   background-color: rgba(125, 136, 145, 0.5);
 }
 
+.sidenav {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #393E41;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 65px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #D3D0CB;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
 body {
   padding-top: 150px;
 }

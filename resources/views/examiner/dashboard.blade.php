@@ -88,7 +88,7 @@
             @guest
                 @yield('content')
             @else
-                @include('examiner.home_gen')
+                @include('examiner.sidebar')
                 @yield('content')
             @endguest
         </main>
