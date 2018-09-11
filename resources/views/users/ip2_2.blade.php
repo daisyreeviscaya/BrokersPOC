@@ -12,12 +12,12 @@
 	        <form method="" action="" aria-label="#" return false>
             @csrf
 				<table class="table">
-				    <thead><!-- style="text-align: center"> -->
+				    <thead class="tableHeader">
 				      <tr>
 				        <th>Line of Business</th>
 				        <th>Balance at the Beginning of the Year</th>
-				        <th>Poduce for the Year</th>
-				        <th>Poduce for the Year</th>
+				        <th>Produced for the Year</th>
+				        <th>Collected During the Year</th>
 				        <th>Balance at the End of the Year </th>
 				      </tr>
 				    </thead>

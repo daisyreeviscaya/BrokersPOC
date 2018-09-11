@@ -45,35 +45,7 @@
                     <ul class="navbar-nav mr-auto">
                         @guest
                         @else
-                        <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/op1_sched') }}">Annual Statement</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/op2_ib') }}">Quarterly Monitoring</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="">Certificate Issuance</a>
-    </li>
-  </ul>
-                        <!-- <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle blue-nav-item" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    Processes <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href=""> Annual Statement of Financial Status</a>
-                                    <hr>
-                                    <a class="dropdown-item" href="">
-                                        Quarterly Monitoring of Clients' Money
-                                    </a>
-                                    <hr>
-                                    <a class="dropdown-item" href="">
-                                        Issuance of Certification
-                                    </a>
-                                </div>
-                            </li> -->
-                            @endguest
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -113,7 +85,12 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+            @guest
+                @yield('content')
+            @else
+                @include('examiner.home_gen')
+                @yield('content')
+            @endguest
         </main>
     </div>
 </body>

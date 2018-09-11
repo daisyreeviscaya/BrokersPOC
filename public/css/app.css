@@ -10513,7 +10513,7 @@ a.text-dark:focus {
   width: 100%;
 }
 
-.table {
+.table .tableHeader {
   text-align: center;
 }
 

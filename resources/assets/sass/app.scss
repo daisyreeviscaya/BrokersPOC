@@ -44,8 +44,11 @@
 	width:100%;
 }
 .table{
-	text-align: center;
+	.tableHeader{
+		text-align: center;
+	}
 }
+
 .blue-nav-item:hover{
 	color: #fff;
 	background-color: rgba(125,136,145,0.5);

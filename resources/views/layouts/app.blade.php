@@ -32,7 +32,7 @@
                     <img src="/images/logo_nav.png">
                     HOME
                     </a>
-                    <ul class="navbar-nav mr-auto">
+                    <!-- <ul class="navbar-nav mr-auto">
     <li class="nav-item">
       <a class="nav-link" href="{{ url('/form') }}">Annual Statement</a>
     </li>
@@ -42,7 +42,7 @@
     <li class="nav-item">
       <a class="nav-link" href="">Certificate Issuance</a>
     </li>
-  </ul>
+  </ul> -->
                     
                 @endguest
 
@@ -78,6 +78,8 @@
                                 <div class="dropdown-menu dropdown-menu-right navbarDropdownRight" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('profile_url') }}">Company Profile</a>
                                     <hr>
+                                    <a class="dropdown-item" href="">Submission History</a>
+                                    <hr>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -96,8 +98,13 @@
         </nav>
 
         <main class="py-4">
-            @include('users.dashboard')
-            @yield('content')
+            @guest
+                @yield('content')
+            @else
+                @include('users.dashboard')
+                @yield('content')
+            @endguest
+            
         </main>
     </div>
 </body>

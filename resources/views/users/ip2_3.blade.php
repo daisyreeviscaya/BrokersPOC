@@ -12,7 +12,7 @@
 	        <form method="" action="" aria-label="#" return false>
             @csrf
 				<table class="table">
-				    <thead>
+				    <thead class="tableHeader">
 				      <tr>
 				        <th>Line of Business</th>
 				        <th>Balance at the Beginning of the Year</th>
