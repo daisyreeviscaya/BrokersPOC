@@ -27,11 +27,11 @@
             <!-- <div class="container-fluid"> -->
                 @guest
                 @else
-                    <a class="navbar-brand blue-nav-item" href="{{ url('/examiner') }}">
-                    <!-- {{ config('app.name', 'Laravel') }} -->
+                    <!-- <a class="navbar-brand blue-nav-item" href="{{ url('/examiner') }}">
+                    {{ config('app.name', 'Laravel') }}
                     <img src="/images/logo_nav.png">
                     HOME
-                    </a>
+                    </a> -->
                     
                 @endguest
 

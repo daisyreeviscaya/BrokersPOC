@@ -9,6 +9,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 .navbar-laravel {
+  //margin-left: 15%;
   background-color: #234a95 !important;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   z-index: 2;	
@@ -65,7 +66,7 @@
     background-color: #393E41;
     overflow-x: hidden;
     padding-top: 20px;
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 .sidenav a {
