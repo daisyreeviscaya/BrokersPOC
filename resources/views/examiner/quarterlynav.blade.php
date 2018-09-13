@@ -3,11 +3,14 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a class="nav-link" href="{{ url('/op2_ib') }}">Insurance Brokers</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="{{ url('/op2_rb') }}">Reinsurance Brokers</a>
+    </li> -->
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url('/quarterlist') }}">Back</a>
     </li>
   </ul>
 

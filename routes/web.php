@@ -33,6 +33,10 @@ Route::get('/admin', 'HomeController@admin')->name('admin');
 Route::get('/examiner', 'HomeController@examiner')->name('examiner');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/form', 'HomeController@forms');
+Route::get('/annuallist', 'HomeController@annuallist');
+Route::get('/quarterlist', 'HomeController@quarterlist');
+Route::get('/op1a_sched', 'HomeController@op1a_sched');
+Route::get('/op1a_summ', 'HomeController@op1a_summ');
 
 //wala pang laman
 Route::get('/user_dashboard', 'HomeController@user_d')->name('user_dashboard');

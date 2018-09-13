@@ -72,4 +72,17 @@ class HomeController extends Controller
         return view('users.ip2_4');
     }
 
+    public function annuallist(){
+        return view('examiner.annuallist');
+    }
+     public function quarterlist(){
+        return view('examiner.quarterlist');
+    }
+    public function op1a_sched(){
+        return view('examiner.op1a_sched');
+    }
+    public function op1a_summ(){
+        return view('examiner.op1a_summ');
+    }
+
 }

@@ -1,7 +1,7 @@
 @extends('examiner.dashboard')
 @section('content')
 @include('examiner.annualnav')
-<h1><strong> ABC Company</strong></h1>
+<h1><strong>DEF Company</strong></h1>
 <h3>Schedule of Cash and Cash Equivalents</h3>
   <table class="table table-hover">
     <thead>

@@ -1,6 +1,7 @@
 @extends('examiner.dashboard')
 @section('content')
-<div id="section1" class="container-fluid">
+@include('examiner.quarterlynav')
+<div id="section1" class="container-fluid" style="padding-top: 150px">
   <h1>Statement of Business Operation - Reinsurance Broker</h1>
   <table class="table table-hover">
     <thead></thead>
@@ -16,7 +17,7 @@
       </tr>
       <tr>
         <th>Telephone Number</th>
-        <td>0123456789</td>
+        <td>987654321</td>
       </tr>
       <tr>
         <th>Certificate of Authority No</th>
@@ -24,7 +25,7 @@
       </tr>
       <tr>
         <th>Date Issued</th>
-        <td>September 7, 2018</td>
+        <td>September 12, 2018</td>
       </tr>
       <tr>
         <th>Valid Until</th>
@@ -41,7 +42,7 @@
     </tbody>
   </table>
 </div>
-<div id="section2" class="container-fluid" >
+<div id="section2" class="container-fluid" style="padding-top: 150px">
   <h2>Receivable from Ceding Companies</h2>
   <table class="table table-hover">
     <thead>
@@ -148,7 +149,7 @@
     </tbody>
   </table>
 </div>
-<div id="section3" class="container-fluid" >
+<div id="section3" class="container-fluid" style="padding-top: 150px">
   <h2>Clients' Money Account</h2>
   <table class="table table-hover">
     <thead>
@@ -255,7 +256,7 @@
     </tbody>
   </table>
 </div>
-<div id="section4" class="container-fluid" >
+<div id="section4" class="container-fluid" style="padding-top: 150px">
   <h2>Payable to Accepting Companies</h2>
   <table class="table table-hover">
     <thead>
@@ -362,7 +363,7 @@
     </tbody>
   </table>
 </div>
-<div id="section5" class="container-fluid" >
+<div id="section5" class="container-fluid" style="padding-top: 150px">
   <h1>Summary</h1>
   <table class="table table-hover">
     <tbody>
@@ -388,8 +389,12 @@
       </tr>
     </tbody>
   </table>
-<!--   <label>Remarks</label>
-  <input class="form-control" type="text-area" name=""> -->
+  <div class="form-group">
+    <label><strong>Remarks: <strong></label>
+    <textarea class="form-control" rows="5"></textarea>
+    <br>
+    <a href="" class="btn btn-success">Save</a>
+  </div>
 </div>
 
 

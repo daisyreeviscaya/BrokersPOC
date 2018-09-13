@@ -46,11 +46,27 @@
     </thead>
     <tbody>
       <tr>
-        <td>Trade and Other Payables</td>
+        <td>Cash Restricted - Clients' Money Account</td>
+        <td></td>
+      </tr>	
+      <tr>
+        <td>Cash and Cash Equivalents</td>
         <td></td>
       </tr>
       <tr>
-        <td>Total Liabilities</td>
+        <td>Receivable from Insurance Companies' Clients</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Receivable from Ceding Company</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Receivable from HMO's Members</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Commission Receivable</td>
         <td></td>
       </tr>
     </tbody>
@@ -64,23 +80,27 @@
     </thead>
     <tbody>
       <tr>
-        <td>Capital Stock</td>
+        <td>Cash Restricted - Clients' Money Account</td>
         <td></td>
       </tr>	
       <tr>
-        <td>Contingency Surplus</td>
+        <td>Cash and Cash Equivalents</td>
         <td></td>
       </tr>
       <tr>
-        <td>Retained Earnings</td>
+        <td>Receivable from Insurance Companies' Clients</td>
         <td></td>
       </tr>
       <tr>
-        <td>Total Equity</td>
+        <td>Receivable from Ceding Company</td>
         <td></td>
       </tr>
       <tr>
-        <td>Total Liabilities and Equity</td>
+        <td>Receivable from HMO's Members</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Commission Receivable</td>
         <td></td>
       </tr>
     </tbody>

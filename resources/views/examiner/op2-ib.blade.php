@@ -1,18 +1,19 @@
 @extends('examiner.dashboard')
 @section('content')
-<div id="section1" class="container-fluid">
+@include('examiner.quarterlynav')
+<div id="section1" class="container-fluid" style="padding-top: 150px">
   <h1>Statement of Business Operation - Insurance Broker</h1>
   <table class="table table-hover">
     <thead></thead>
     <tbody>
       <tr>
         <th>Name of Insurance Broker</th>
-        <td>ABC Company</td>
+        <td>DEF Company</td>
 
       </tr>
       <tr>
         <th>Address</th>
-        <td>ABC, ADDRESS</td>
+        <td>DEF, ADDRESS</td>
       </tr>
       <tr>
         <th>Telephone Number</th>
@@ -41,7 +42,7 @@
     </tbody>
   </table>
 </div>
-<div id="section2" class="container-fluid" >
+<div id="section2" class="container-fluid" style="padding-top: 150px">
   <h2>Receivable from Insured</h2>
   <table class="table table-hover">
     <thead>
@@ -148,7 +149,7 @@
     </tbody>
   </table>
 </div>
-<div id="section3" class="container-fluid" >
+<div id="section3" class="container-fluid" style="padding-top: 150px">
   <h2>Clients' Money Account</h2>
   <table class="table table-hover">
     <thead>
@@ -255,7 +256,7 @@
     </tbody>
   </table>
 </div>
-<div id="section4" class="container-fluid" >
+<div id="section4" class="container-fluid" style="padding-top: 150px">
   <h2>Payable to Insurance Companies</h2>
   <table class="table table-hover">
     <thead>
@@ -362,7 +363,7 @@
     </tbody>
   </table>
 </div>
-<div id="section5" class="container-fluid" >
+<div id="section5" class="container-fluid" style="padding-top: 150px">
   <h1>Summary</h1>
   <table class="table table-hover">
     <tbody>
@@ -388,6 +389,12 @@
       </tr>
     </tbody>
   </table>
+  <div class="form-group">
+    <label><strong>Remarks: <strong></label>
+    <textarea class="form-control" rows="5"></textarea>
+    <br>
+    <a href="" class="btn btn-success">Save</a>
+  </div>
 </div>
 
 @endsection

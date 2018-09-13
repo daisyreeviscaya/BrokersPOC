@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- <title>{{ config('app.name', 'Laravel') }}</title> -->
-    <title>Brokers POC</title>
+    <title>@yield('pageTitle')</title>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -33,16 +33,16 @@
                     HOME
                     </a>
                     <!-- <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/form') }}">Annual Statement</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ url('/ip2_1') }}">Quarterly Monitoring</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="">Certificate Issuance</a>
-    </li>
-  </ul> -->
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ url('/form') }}">Annual Statement</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ url('/ip2_1') }}">Quarterly Monitoring</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Certificate Issuance</a>
+                        </li>
+                      </ul> -->
                     
                 @endguest
 
@@ -101,7 +101,6 @@
             @guest
                 @yield('content')
             @else
-                @include('users.dashboard')
                 @yield('content')
             @endguest
             
